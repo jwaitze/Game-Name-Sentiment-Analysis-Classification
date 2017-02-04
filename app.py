@@ -76,7 +76,7 @@ print(scores)
 print()
 
 def p(name):
-    model.predict([convert_input(s)])[0]
+    model.predict([convert_input(name)])[0]
     c = classify_predictions(predictions)
     s = prediction_scores(predictions)
     return (c, s)
